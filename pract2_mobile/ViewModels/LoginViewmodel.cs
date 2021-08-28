@@ -52,7 +52,8 @@ namespace pract2_mobile.ViewModels
         private async void RegisterNav()
         {
             var registrationPage = new RegistrationPage();
-            await Application.Current.MainPage.Navigation.PushAsync(registrationPage);
+            await App.Current.MainPage.Navigation.PushAsync(registrationPage);
+            //await Application.Current.MainPage.Navigation.PushAsync(registrationPage);
         }
     }
 }

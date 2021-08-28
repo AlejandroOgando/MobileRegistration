@@ -50,10 +50,15 @@ namespace pract2_mobile.ViewModels
             {
                 UserDialogs.Instance.Toast("No pueden haber campos vacíos.", TimeSpan.FromSeconds(3));
             }
+            else if (PasswordBox != PasswordCheckBox)
+            {
+                UserDialogs.Instance.Toast("La contraseña no conincide!", TimeSpan.FromSeconds(3));
+            }
             else
             {
                 UserDialogs.Instance.Toast($"Ha sido registrado con Exito!", TimeSpan.FromSeconds(3));
             }
+
         }
     }
 }

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract2_mobile.Views.HomePage"
+             Title="Homepage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*">
+
+                <Image
+                
+                Grid.Column="0"
+                Grid.Row="0"
+                Source="beer.png"
+                HeightRequest="100" 
+                WidthRequest="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+                <Label Text="Bar"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   FontSize="25"
+                   TextColor="Black"/>
+                <Image
+                Grid.Column="1"
+                Grid.Row="0"
+                Source="food.png"
+                HeightRequest="100" 
+                WidthRequest="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+                <Label Text="Fine Dinnig"
+                   Grid.Column="1"
+                   Grid.Row="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   FontSize="25"
+                   TextColor="Black"/>
+                <Image
+                Grid.Column="0"
+                Grid.Row="1"
+                Source="cafe.png"
+                HeightRequest="100" 
+                WidthRequest="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+                <Label Text="Cafes"
+                   Grid.Column="0"
+                    Grid.Row="1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   FontSize="25"
+                   TextColor="Black"/>
+                <Image
+                Grid.Column="1"
+                Grid.Row="1"
+                Source="map.png"
+                HeightRequest="100" 
+                WidthRequest="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+                <Label Text="Nearby"
+                   Grid.Column="1"
+                    Grid.Row="1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   FontSize="25"
+                   TextColor="Black"/>
+                <Image
+                Grid.Column="0"
+                Grid.Row="2"
+                Source="burger.png"
+                HeightRequest="100" 
+                WidthRequest="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+                <Label Text="Fast Food"
+                   Grid.Column="0"
+                    Grid.Row="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   FontSize="25"
+                   TextColor="Black"/>
+                <Image
+                Grid.Column="1"
+                Grid.Row="2"
+                Source="pie.png"
+                HeightRequest="100" 
+                WidthRequest="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+                <Label Text="Featured Foods"
+                   Grid.Column="1"
+                   Grid.Row="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   FontSize="25"
+                   TextColor="Black"/>
+            </Grid>
+        </ScrollView>
+        
+ 
+    </ContentPage.Content>
+</ContentPage>
