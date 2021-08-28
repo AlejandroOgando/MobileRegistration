@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract2_mobile.Views.LoginPage">
+    <ContentPage.Content>
+        <Grid RowSpacing="{OnPlatform iOS=20,Android=10}">
+            <StackLayout Grid.Row="1">
+                <Image
+                    Source="loginImage.png" 
+                    HeightRequest="150" 
+                    WidthRequest="150"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    />
+                <Entry
+                    Text="{Binding EmailBox}"
+                    Placeholder="Email"
+                    Keyboard="Email"/>
+                <Entry
+                    Text="{Binding PasswordBox}"
+                    Placeholder="Password"
+                    IsPassword="True"/>
+                <Button 
+                    Text="Login"
+                    Command="{Binding LoginCommand}"
+                    TextColor="Red" 
+                    BackgroundColor="Black" 
+                    BorderColor="Red"/>
+                <Button 
+                    Text="Register"
+                    Command="{Binding RegisterNavCommand}"
+                    TextColor="Red" 
+                    BackgroundColor="Cyan" 
+                    BorderColor="Red"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
